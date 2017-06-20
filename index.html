@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jqm_boiler</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/themes/weatherreporter.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<!-- HOME/WEATHER PAGE-->
+	<div data-role="page" id="home">
+		<div data-role="header">
+			<h1>WeatherReporter</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="check" data-transition="slideUp">Weather</a></li>
+					<li><a href="#settings" data-icon="gear" data-transition="slideUp">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div id="weather">
+				<div id="weatherTop"></div>
+				<ul id="weatherList" data-role="listview">
+			</div>
+		</div>
+	</div>
+
+	<!-- SETTINGS PAGE-->
+	<div data-role="page" id="settings">
+		<div data-role="header">
+			<h1>WeatherReporter</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="check" data-transition="slideDown">Weather</a></li>
+					<li><a href="#settings" data-icon="gear" data-transition="slideDown">Settings</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h3>Settings</h3>
+			<form id="settingsForm">
+				<label for="city">City</label>
+				<input type="text" id="city">
+				<label for="state">State</label>
+				<input type="text" id="state">
+				<input type="submit" value="Save">
+			</form>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
